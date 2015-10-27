@@ -27,7 +27,12 @@ After composer finishes importing the package:
 + Place the `/vendor/elioair/chesscaptcha/assets` directory or it's contents where it suits your project. **Note** that the image files are used both by the `js` client and the `php` server side.
 + Fix the image paths in the `/vendor/elioair/chesscaptcha/src/ChessCaptcha/BoardImageCreator.php`
 
-*Working Example:* `/examples/chesscaptcha-example.php`
+#### Directly cloning the repo 
+Clone the repository and see immediately how it works by going to the `/examples` folder. You might need to `require_once` the files of the classes involved in the class files in the `src/ChessCaptcha` folder.
+
+*Quick tip: run `composer install` and then `composer dump-autoload --optimize` and include the loader.*
+
+**Working Example:** `/examples/chesscaptcha-example.php`
 
 ### The php configuration
 
