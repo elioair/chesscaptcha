@@ -36,6 +36,41 @@
 
 <p>This is a captcha system where the user either recreates the position of the pieces on the board - <em>non chess savvy users</em> - or she solves a mate-in-one puzzle by putting the piece on the square where it gives the checkmate - <em>chess savvy users only</em>. There is also a no-js fallback that exists mostly as a placeholder for future iterations; don't use it.</p>
         </section>
+        
+        <section id="usage">
+          <h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage.</h3>
+
+<h4>Copy the position mode. - Default</h4>
+<p>
+  In this mode which happens to be the one where the user needs no chess knowledge at all to use, he simply drags the pieces
+  into the board trying to replicate the position shown in the image.
+</p>
+<p style="text-align:center;">
+  <img src="images/chesscaptchausage.gif" style="width:90%;"/>
+</p>
+<h4>Mate in One mode</h4>
+<p>
+  Here the user is given a position and where he has to move a piece to create a mating position on the board.
+  Only chess players -and maybe computer engines. cough..!- will be able to solve this. It can be used for example in chess sites
+  to determine if the user is really a chess player or a simple spammer.
+</p>
+<p style="text-align:center;">
+  <img src="images/chesscaptchamatemode.gif" style="width:90%;"/>
+</p>
+<h4>Color Tolerance</h4>
+<p>
+  If needed you can turn on color tolerance. In this case the validation will be color agnostic and for example the white king will be 
+  considered equal to the black king.
+</p>
+<p style="text-align:center;">
+  <img src="images/chesscaptchacolortolerance.gif" style="width:90%;"/>
+</p>
+        </section>
+        
+        <section>
+          <h4>See the <a href="https://github.com/elioair/chesscaptcha">project's repo</a> for more info</h4>
+          </section>
 
         <footer>
           Chesscaptcha is maintained by <a href="https://github.com/elioair">elioair</a><br>
