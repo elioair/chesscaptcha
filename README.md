@@ -18,6 +18,15 @@ Created by @elioair | twitter: [@elioair](http://twitter.com/elioair)
 Implementation:
 ===
 
+#### Through Composer
+```
+composer require elioair/chesscaptcha dev-master
+```
+After composer finishes importing the package:
++ You may remove the `/vendor/elioair/chesscaptcha/examples` directory
++ Place the `/vendor/elioair/chesscaptcha/assets` directory or it's contents where it suits your project. **Note** that the image files are used both by the `js` client and the `php` server side.
++ Fix the image paths in the `/vendor/elioair/chesscaptcha/src/ChessCaptcha/BoardImageCreator.php`
+
 *Working Example:* `/examples/chesscaptcha-example.php`
 
 ### The php configuration
