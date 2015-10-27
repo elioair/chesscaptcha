@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "keywords": ["captcha", "spam", "abuse", "chess", "chesscaptcha"],
-    "homepage": "http://dev.emar.gr/blog/chesscaptcha/",
+    "homepage": "http://elioair.github.io/chesscaptcha/",
     "support": {
         "source": "https://github.com/elioair/chesscaptcha"
     },
