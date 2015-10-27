@@ -1,0 +1,30 @@
+{
+    "name": "elioair/chesscaptcha",
+    "description": "A simple chess based captcha system. Don't forget when you install it via composer to also copy the image and js files form the repo.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["captcha", "spam", "abuse", "chess", "chesscaptcha"],
+    "homepage": "http://dev.emar.gr/blog/chesscaptcha/",
+    "support": {
+        "source": "https://github.com/elioair/chesscaptcha"
+    },
+    "authors": [
+        {
+            "name": "Elioair"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"    
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "suggest": {
+        "ext-gd": "Uses GD library to generate the image"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elioair\\ChessCaptcha\\": "src/ChessCaptcha"
+        }
+    }
+}
