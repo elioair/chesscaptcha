@@ -1,11 +1,12 @@
 Chess Captcha
 ===
 
-##### Requirements: php >= 5.4, jquery > 1.8 | Latest Version 2.0.0
+##### Requirements: php >= 5.4, jquery > 1.8 | Latest Version 2.0.2
 
 This is a captcha system where the user either recreates the position of the pieces on the board - *non chess savvy users* - or she solves a mate-in-one puzzle by putting the piece on the square where it gives the checkmate - *chess savvy users only*. There is also a no js fallback that exists mostly as a placeholder for future iterations; don't use it. Chesscaptcha was built for fun, it is a work in progress so feel free to make pull requests and contribute!
 
 **View demo [here](http://elioair.github.io/chesscaptcha/).**
+**Laravel + Chesscaptcha Tutorial [here](http://dev.emar.gr/blog/laravel-5-chess-captcha-authentication).**
 
 Created by @elioair | twitter: [@elioair](http://twitter.com/elioair)
 
@@ -20,7 +21,7 @@ Implementation:
 
 #### Through Composer
 ```
-composer require elioair/chesscaptcha dev-master
+composer require elioair/chesscaptcha
 ```
 After composer finishes importing the package:
 + You may remove the `/vendor/elioair/chesscaptcha/examples` directory
