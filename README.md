@@ -38,20 +38,21 @@ Clone the repository and see immediately how it works by going to the `/examples
 
 ```php
 <?php
-$config = [
-  'divId'=>'chesscaptcha',
-  'whitesquare'=>'#f0d9b5',
-  'blacksquare'=>'#b58863',
-  'matemode'=>'no', // yes or no
-  'nojsfallback'=>'yes', // yes or no; activate the fallback in case js is disabled
-  'titleoverride'=>'Copy the position below', // text override
-  'titlemateoverride'=>'Mate-In-One', // text override
-  'helpoverride'=>'Drag the pieces into the board to copy the given position. To remove a piece drag it out of the board.', // text override
-  'startoverride'=>'Start', // text override
-  'clearoverride'=>'Clear', // text override
-  'pieceImages'=>'/src/', // the path to images for the js part
-  'pieceStyle'=>'wikipedia', // the name of the piece style to use or 'random', default is 'wikipedia'
-];
+// The array that contains the configuration for the php side
+  $config = [
+    'divId'=>'chesscaptcha',
+    'whitesquare'=>'#f0d9b5',
+    'blacksquare'=>'#b58863',
+    'matemode'=>'no', // yes or no
+    'nojsfallback'=>'no', // yes or no; activate the fallback in case js is disabled
+    'titleoverride'=>'Copy the position below', // text override
+    'titlemateoverride'=>'Mate-In-One', // text override
+    'helpoverride'=>'Drag the pieces into the board to copy the given position. To remove a piece drag it out of the board.', // text override
+    'startoverride'=>'Start', // text override
+    'clearoverride'=>'Clear', // text override
+    'pieceStyle'=>'wikipedia', // the name of the piece style to use or 'random', default is 'wikipedia'
+  ];
+
   require_once("../src/ChessCaptcha/ChessCaptcha.php");
   $chesscaptcha = new \ChessCaptcha\ChessCaptcha($config['whitesquare'], $config['blacksquare'], $config['matemode'], $config['nojsfallback'], $config['pieceStyle']);
 ?>
@@ -85,16 +86,18 @@ var chessCaptchaParams = {
     cc_sideToPlay: '<?php echo $chesscaptcha->chessCaptchaFenCode[2]; ?>',
     cc_challenge: '<?php echo $chesscaptcha->chessCaptchaChallenge; ?>',  // The image of the position
     cc_matechallenge: '<?php echo $chesscaptcha->chessCaptchaFenCode[0];?>',  // The fen code of matemode position
-    cc_pathtoimg: '<?php echo $config['pieceImages'];?>',
+    cc_pathtoimg: '../assets/img/pieces',
     cc_piecestyle: '<?php echo $chesscaptcha->chessCaptchaPieceStyle;?>',
 };
 </script>
-<script type="text/javascript" src="../src/js/chesscaptcha.js"></script>
+<script type="text/javascript" src="../assets/js/chesscaptcha.js"></script>
 ```
 
 ##### Add this at the end and configure it if you want ajax validation
 
-`<script type="text/javascript" src="../src/js/chesscaptcha-ajax-validation.js"></script>`
+```html
+<script type="text/javascript" src="../assets/js/chesscaptcha-ajax-validation.js"></script>
+```
 
 ### Validation
 Grab the `chesscaptchaposition` from the POST request and feed it into the validation method. `$validate = \ChessCaptcha\ChessCaptcha::validate($inputFen, $noJs, $colorTolerance);` see the `src/chesscaptchavalidate.php` file for more.

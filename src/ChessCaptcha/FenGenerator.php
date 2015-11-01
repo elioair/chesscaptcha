@@ -102,11 +102,12 @@ class FenGenerator
       session_start();
     }
 
-    $sessFen = $_SESSION[$sessionVar];
-    if($sessFen){
+    if(isset($_SESSION[$sessionVar])){
       unset($_SESSION[$sessionVar]);
+    }else{
+      $_SESSION[$sessionVar] = $fenCode;
     }
-    $_SESSION[$sessionVar] = $fenCode;
+    
   }
 
   /**

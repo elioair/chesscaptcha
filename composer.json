@@ -1,6 +1,6 @@
 {
     "name": "elioair/chesscaptcha",
-    "description": "A simple chess based captcha system. Don't forget when you install it via composer to also copy the image and js files form the repo.",
+    "description": "A simple chess based captcha system.",
     "type": "library",
     "license": "MIT",
     "keywords": ["captcha", "spam", "abuse", "chess", "chesscaptcha"],

@@ -454,7 +454,7 @@ function expandConfig() {
   if (cfg.hasOwnProperty('pieceTheme') !== true ||
       (typeof cfg.pieceTheme !== 'string' &&
        typeof cfg.pieceTheme !== 'function')) {
-    cfg.pieceTheme = 'img/chesspieces/wikipedia/{piece}.png';
+    cfg.pieceTheme = chessCaptchaParams.cc_pathtoimg + '/wikipedia/{piece}.png';
   }
 
   // animation speeds
@@ -1775,7 +1775,7 @@ window.ChessBoard.objToFen = objToFen;
 
   // Spare Pieces Config
   var chessCaptchaChessboardCfg = {
-    pieceTheme: chessCaptchaParams.cc_pathtoimg+'/img/pieces/'+ chessCaptchaParams.cc_piecestyle +'/{piece}.png',//'/img/chesspieces/wikipedia/{piece}.png',
+    pieceTheme: chessCaptchaParams.cc_pathtoimg+'/'+ chessCaptchaParams.cc_piecestyle +'/{piece}.png',//'/img/chesspieces/wikipedia/{piece}.png',
     draggable: true,
     dropOffBoard: 'trash',
     sparePieces: true,
