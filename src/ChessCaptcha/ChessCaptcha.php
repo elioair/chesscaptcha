@@ -69,8 +69,12 @@ class ChessCaptcha
     if (session_status() === PHP_SESSION_NONE){
       session_start();
     }
-    isset($_SESSION['fenchallenge']) ? $sessFen = $_SESSION['fenchallenge'] : die('Error: No position!');
+    isset($_SESSION['fenchallenge']) ? $sessFen = $_SESSION['fenchallenge'] : $sessFen = null; //die('Error: No position!');
     isset($_SESSION['piecenojs']) ? $sessPiece = $_SESSION['piecenojs'] : $sessPiece = null;
+
+    if($sessFen == null){
+      return false;
+    }
 
     // When js is disabled
     if($noJs && $sessPiece){
