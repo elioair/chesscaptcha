@@ -6,7 +6,10 @@ Chess Captcha
 This is a captcha system where the user either recreates the position of the pieces on the board - *non chess savvy users* - or she solves a mate-in-one puzzle by putting the piece on the square where it gives the checkmate - *chess savvy users only*. There is also a no js fallback that exists mostly as a placeholder for future iterations; don't use it. Chesscaptcha was built for fun, it is a work in progress so feel free to make pull requests and contribute!
 
 **View demo [here](http://elioair.github.io/chesscaptcha/).**
+
 **Laravel + Chesscaptcha Tutorial [here](http://dev.emar.gr/blog/laravel-5-chess-captcha-authentication).**
+
+**Chess captcha + Emojis [here](http://dev.emar.gr/blog/emojis-used-in-chesscaptcha).**
 
 Created by @elioair | twitter: [@elioair](http://twitter.com/elioair)
 
