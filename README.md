@@ -7,9 +7,9 @@ This is a captcha system where the user either recreates the position of the pie
 
 **View demo [here](http://elioair.github.io/chesscaptcha/).**
 
-**Laravel + Chesscaptcha Tutorial [here](http://dev.emar.gr/blog/laravel-5-chess-captcha-authentication).**
+:books: **Laravel + Chesscaptcha Tutorial [here](http://dev.emar.gr/blog/laravel-5-chess-captcha-authentication).**
 
-**Chess captcha + Emojis [here](http://dev.emar.gr/blog/emojis-used-in-chesscaptcha).**
+:books: **Chess captcha + Emojis [here](http://dev.emar.gr/blog/emojis-used-in-chesscaptcha).**
 
 Created by @elioair | twitter: [@elioair](http://twitter.com/elioair)
 
